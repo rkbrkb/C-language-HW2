@@ -1,0 +1,14 @@
+//read two sides rectangle, area+perimeter
+
+#include<stdio.h>
+int main(){
+    int s1, s2;
+    printf("Please enter the sides \n");
+    scanf("%d%d",&s1,&s2);
+
+    int area = s1 * s2;
+    int perimeter = 2*(s1 + s2);
+
+    printf("The area is %d and the perimeter is %d", area, perimeter);
+    return 0;
+}
