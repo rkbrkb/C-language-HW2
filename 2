@@ -1,0 +1,28 @@
+//delta, roots of an equation
+#include <math.h>
+#include <stdio.h>
+int main()
+{
+    int a, b, c, D, x1, x2 ;
+    printf("Enter a, b and c \n");
+    scanf("%d %d %d", &a, &b, &c);
+
+    D = b * b - (4 * a * c);
+
+    if (D > 0)
+    {
+        x1 = (-b + sqrt(D)) / (2 * a);
+        x2 = (-b - sqrt(D)) / (2 * a);
+        printf("root1 = %d and root2 = %d", x1, x2);
+    }
+    else if (D == 0) {
+        x1 = x2 = -b / (2 * a);
+        printf("root1 = root2 = %d;", x1);
+    }
+    else {
+       //no root
+       printf("no root siro t9awdo matmrdonich");
+    }
+
+    return 0;
+} 
